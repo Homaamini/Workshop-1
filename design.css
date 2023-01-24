@@ -1,0 +1,467 @@
+/* GENERAL */
+@font-face {
+   font-family: Vazir;
+   font-style: normal;
+   font-weight: normal;
+   src: url('Fonts/Vazir.eot');
+   src: url('Fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+   url('Fonts/Vazir.woff2') format('woff2'), 
+   url('Fonts/Vazir.woff') format('woff'), 
+   url('Fonts/Vazir.ttf') format('truetype');
+  }
+@font-face {
+   font-family: Vazir;
+   font-style: normal;
+   font-weight: bold;
+   src: url('Fonts/Vazir-Bold.eot');
+   src: url('Fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
+   url('Fonts/Vazir-Bold.woff2') format('woff2'), 
+   url('Fonts/Vazir-Bold.woff') format('woff'), 
+   url('Fonts/Vazir-Bold.ttf') format('truetype');
+  }
+*{
+   box-sizing: border-box; 
+}
+body {
+   margin: 0;
+   font-family: 'Vazir', Helvetica, sans-serif !important;
+   font-weight:normal;
+ }
+p{
+   font-size: 16px;
+   text-align: justify;
+   direction: rtl;
+}
+/* #myTopnav a:visited{
+   color: #f2f2f2;
+   text-decoration: none !important;
+} */
+
+/* HEADER PART */
+
+li:hover{
+   cursor: pointer;
+}
+#header{
+   background-color: #0c8181;
+   padding: 10px 0px;
+}
+#header p{
+   float: right;
+   color: white;
+   font-size: 40px;
+   margin: 0;
+   margin-right: 30px; 
+}
+#mainmenu{
+   display: inline-block;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   direction: rtl;
+   z-index: 1;
+}
+#mainmenu li{
+   padding: 10px 25px;
+   display: inline-block;
+   position: relative;
+   border-radius: 3px;
+   color: white;
+   transition: all 1s linear;
+}
+#mainmenu li:hover{
+   background-color: #043131;
+}
+#mainmenu a{
+   font-size: 18px;
+   font-weight: bold;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   border-radius: 5px;
+   text-decoration: none;
+}
+#mainmenu li ul{
+   list-style: none;
+   direction: rtl;
+   margin: 0;
+   padding-top: 30px;
+   padding: 0;
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0px;
+   transition: all 1s linear;
+   
+}
+#mainmenu li ul li{
+   background-color: #0c8181;
+   width: 100%;
+}
+#mainmenu li ul li ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   direction: rtl;
+   position: absolute;
+   left: 100%;
+   top: 0px;
+}
+#mainmenu li ul li ul li{
+   display: none;
+   width: 100%;
+}
+#mainmenu li ul li ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   direction: rtl;
+   display: none;
+}
+.showme{
+   display: block;
+}
+
+#mainmenu li ul li:hover li{
+   display: block;
+}
+.icon{
+   color: white;
+   display: none;
+   text-align: left;
+   padding: 20px 0px;
+}
+.dropdown{
+   display: none;
+}
+/*********** SIDER PART **********/
+
+#slider{
+    width: 100%;
+    position: relative;
+} 
+#slider img{
+   padding: 0;
+   width: 100%;
+   top: 0;
+} 
+#slider .titr{
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+}
+#slider div{
+   width: 500px;
+   margin:0;
+   background-color: rgb(12, 129, 129, 0.7);
+   position: absolute;
+   border: 3px solid white;
+   border-radius: 5px;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   top: 85%;
+   left: 50%;
+   display: none;
+}
+#slider div span{
+   float: right;
+   color: white;
+   margin: 10px;
+   display: block;
+}
+#slider div span:hover{
+   cursor: pointer;
+}
+#slider div p{
+   font-size: 16px;
+   font-weight: 700;
+   text-align: justify;
+   padding: 10px 25px;
+   color: white;
+}
+
+ #clickdes {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+} 
+/******* ABOUT US PART *******/
+#partaboutus{
+   width: 100%;
+   margin: 50px 0px;
+}
+#aboutusparent{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+#aboutus-top{
+   text-align: center;
+}
+#aboutus-top p:nth-child(2){
+   padding: 15px 180px;
+   margin: 0 auto;
+}
+.quadbox{
+    width: 25%;
+    padding: 0px 15px;
+    margin-top: 30px ;
+    text-align: center;
+    border-left: 2px solid rgb(189, 187, 187);
+ }
+ .quadbox:hover{
+   box-shadow: 5px 5px 10px rgb(163, 162, 162);
+   cursor: pointer;
+ }
+/******* SERVICE PART *******/
+ #partservice{
+   width: 100%;
+   margin: 100px 0px;
+   display: flex;
+ }
+ #partservice-left{
+    width: 50%;
+    display: inline-block;
+    background-image: url(photos/businessman-typng.jpg);
+    opacity: 0.45;
+    margin: 0;
+ }
+ #partservice-left img{
+   object-fit: fill;
+   width: 100%;
+ }
+ #partservice-right{
+   width: 50%;
+   padding: 5px 25px 0px 25px;
+   background-color: rgb(190, 190, 190);
+   float: right;
+   margin: 0;
+   direction: rtl;
+ }
+
+ #partservice-box{
+   width: 100%;
+   display: flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+ }
+ .lbox{
+   display: inline-block;
+   width: 50% ;
+   padding: 10px;
+ }
+ /* .lbox:hover{
+   box-shadow: 5px 5px 8px rgb(163, 162, 162);
+   cursor: pointer;
+ } */
+ #partservice-box ul{
+   direction: rtl;
+   margin: 0px;
+ }
+ #partservice-box ul li{
+    margin: 0px;
+    padding: 15px 20px;
+    display: inline;
+ }
+ /******* SAMPLE PART *******/
+ #samplepart{
+    width: 100%;
+    height:auto;
+    margin: 40px 0px;
+    position: relative;
+ }
+ #samplepart-top p{
+   padding: 15px 180px;
+ }
+ #samplepart-bottom {
+   width: 100%;
+   direction: rtl;
+ }
+ .picbox{
+   width: 24.5%; 
+   height:330px; 
+   margin: 0 auto;
+   display: inline-block;
+   position: relative;
+   background-image: url(photos/typing.jpg);
+ }
+ /******* CONTACT US PART *******/
+ #contactus{
+    width: 100%; 
+    height:auto;
+ }
+ #contactus p{
+   padding: 15px 180px;
+ }
+ #contactus h1:hover{
+   cursor: pointer;
+ }
+
+ /******* FOOTER PART *******/
+ footer{
+    width: 100%; 
+    background-color: rgb(15, 15, 15);
+    position: relative;
+    padding: 50px 0px 100px 0px;
+ }
+ footer form input{
+    width: 600px;
+    height: 50px;
+    background-color:rgb(15, 15, 15) ;
+    color: white;
+    border: none;
+    border-bottom: 3px solid gray;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+ }
+ footer form p:hover{
+   cursor: pointer;
+ }
+ footer form input:nth-last-child(2){
+   width: 700px;
+ }
+ /******* GO-UP GO-UP PART *******/
+ #go-up{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: rgb(229, 229, 241);
+   float: right;
+   position: fixed;
+   right: 25px;
+   bottom: 25px;
+   z-index: 1;
+   box-shadow: 8px 8px 8px #4e4e4e;
+   text-align: center; 
+   align-items: center;  
+   line-height: 50px;
+   color: #747272;
+   cursor: pointer;
+   font-size:36px;
+ }
+
+ @media screen and (max-width:755px){
+   #header p{ 
+       font-size: 24px;
+       padding-top: 3%;
+   }
+   #mainmenu {
+       display: none;
+       direction: ltr;
+   }
+   #mainmenu a{ 
+       text-align: left;
+       display: block;
+       width: 100%;
+       
+   }
+   #mainmenu li{
+       display: block;
+       width: 30%;
+       position: relative;
+       padding: 15px 20px;
+   }
+   #mainmenu li ul{
+      direction: ltr;
+       position: absolute;
+       left: 100%;
+       top: 0;
+   }
+   #mainmenu li ul li{
+       background-color:#043131 ;
+       position: relative;
+       width: 150%;
+   }
+   #mainmenu li ul li ul{
+       position: absolute;
+       direction: ltr;
+       margin: 0px;
+       top: 0px;
+       left: 100%;
+   }
+   #mainmenu li ul li ul li{
+       width: 150%;
+   }
+
+   .icon{
+       display: inline-block;
+       margin-left: 20px;
+   }
+}
+ /* THIS PART IS MEDIA QUERY FOR TABLET */
+ @media screen and (max-width:992px) {
+   
+   #aboutus-top p:nth-child(2){
+      padding: 15px 70px;
+   }
+   
+   .quadbox{
+      width: 60%;
+      border-left: none;
+      padding: 0;
+   }
+   #partservice{
+      display: inline;
+   }
+   #partservice-left{
+      width: 100%;
+      display: block;
+   }
+   #partservice-right{
+      width: 100%;
+      float: none;
+   }
+   #samplepart-top p{
+      padding: 15px 70px;
+   }
+   .picbox{
+      width: 49%;
+   } 
+   #contactus p{
+      padding: 15px 70px;
+   }
+   footer form input{
+      width: 500px;
+   }
+ }
+ /* THIS PART IS MEDIA QUERY FOR MOBILE */
+ @media screen and (max-width:560px) {
+   #slider {
+      height: auto;
+   }
+   #slider .titr{
+      font-size: 20px;
+   }
+   #slider div{
+      width: 300px;
+   }
+   #aboutusparent{
+      flex-direction: column;
+   }
+   
+   #partservice-box{
+      flex-direction: column;
+   }
+  .lbox{
+      width: 100%;
+   }
+   .picbox{
+      width: 100%;
+   }
+   footer form input{
+      width: 200px;
+   }
+ }
